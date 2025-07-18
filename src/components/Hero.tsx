@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
+import profileImage from '../assets/krutika-profile.jpg'; // ✅ Import your image
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
           <div className="mb-8">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-2xl border-4 border-blue-500 bg-gray-700">
               <img 
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                src={profileImage} 
                 alt="Krutika Yawale Profile"
                 className="w-full h-full object-cover"
               />
