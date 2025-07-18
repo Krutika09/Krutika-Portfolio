@@ -9,8 +9,8 @@ const Projects = () => {
       technologies: ['Flask', 'Jenkins', 'Docker', 'AWS'],
       icon: Server,
       category: 'CI/CD',
-      githubUrl: 'https://github.com/krutikaYawale/flask-cicd',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/Flask-CICD',
+      demoUrl: 'https://github.com/Krutika09/Flask-CICD'
     },
     {
       title: 'Scalable Web Application on AWS',
@@ -18,8 +18,8 @@ const Projects = () => {
       technologies: ['AWS', 'VPC', 'Auto Scaling', 'ALB', 'EC2'],
       icon: Cloud,
       category: 'Cloud Infrastructure',
-      githubUrl: 'https://github.com/krutikaYawale/aws-vpc-project',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/High-Availability-Web-App-Architecture',
+      demoUrl: 'https://github.com/Krutika09/High-Availability-Web-App-Architecture'
     },
     {
       title: 'Ansible-Driven Kubernetes Configuration',
@@ -27,8 +27,8 @@ const Projects = () => {
       technologies: ['Ansible', 'Kubernetes', 'Docker', 'SSH', 'NGINX'],
       icon: Cog,
       category: 'Configuration Management',
-      githubUrl: 'https://github.com/krutikaYawale/ansible-kubernetes-config',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/Project07-Ansible-Driven-K8s-Configuration',
+      demoUrl: 'https://github.com/Krutika09/Project07-Ansible-Driven-K8s-Configuration'
     },
     {
       title: 'AWS Lambda EBS Snapshot Cleanup',
@@ -36,8 +36,8 @@ const Projects = () => {
       technologies: ['AWS Lambda', 'EBS', 'Python', 'CloudWatch'],
       icon: Cloud,
       category: 'Automation',
-      githubUrl: 'https://github.com/krutikaYawale/aws-lambda-ebs-cleanup',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/Cost-Optimization-With-AWS-Lambda',
+      demoUrl: 'https://github.com/Krutika09/Cost-Optimization-With-AWS-Lambda'
     },
     {
       title: 'GitHub Repository Access Manager',
@@ -45,8 +45,8 @@ const Projects = () => {
       technologies: ['GitHub API', 'Python', 'Shell Scripting'],
       icon: Server,
       category: 'DevOps Tools',
-      githubUrl: 'https://github.com/krutikaYawale/github-access-manager',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/GitHub-Repository-Access-Manager',
+      demoUrl: 'https://github.com/Krutika09/GitHub-Repository-Access-Manager'
     },
     {
       title: 'Ansible Cluster Setup',
@@ -54,8 +54,17 @@ const Projects = () => {
       technologies: ['Ansible', 'Docker', 'Kubernetes', 'Red Hat', 'Linux'],
       icon: Cog,
       category: 'Infrastructure',
-      githubUrl: 'https://github.com/krutikaYawale/ansible-cluster-setup',
-      demoUrl: '#'
+      githubUrl: 'https://github.com/Krutika09/Project01-Ansible-Cluster-in-Docker-AND-Kubernetes',
+      demoUrl: 'https://github.com/Krutika09/Project01-Ansible-Cluster-in-Docker-AND-Kubernetes'
+    },
+    {
+      title: 'K8s GitOps with ArgoCD and Nginx',
+      description: 'GitOps implementation using ArgoCD for Kubernetes deployments with Nginx applications, demonstrating continuous deployment practices.',
+      technologies: ['Kubernetes', 'ArgoCD', 'GitOps', 'Nginx', 'YAML'],
+      icon: Cog,
+      category: 'GitOps',
+      githubUrl: 'https://github.com/Krutika09/K8s-GitOps-Argocd-Nginx',
+      demoUrl: 'https://github.com/Krutika09/K8s-GitOps-Argocd-Nginx'
     }
   ];
 
@@ -76,63 +85,60 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Projects</h2>
-
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => {
-              const Icon = project.icon;
-              return (
-                <div key={index} className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="bg-blue-600 p-3 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
-                      <Icon size={24} />
-                    </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getCategoryColor(project.category)}`}>
-                      {project.category}
-                    </span>
+            {projects.map((project, index) => (
+              <div key={index} className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="bg-blue-600 p-3 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
+                    <project.icon size={24} />
                   </div>
-
-                  <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-gray-300 mb-4 leading-relaxed">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex gap-3">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
-                    >
-                      <Github size={16} />
-                      Code
-                    </a>
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors duration-200"
-                    >
-                      <ExternalLink size={16} />
-                      Demo
-                    </a>
-                  </div>
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getCategoryColor(project.category)}`}>
+                    {project.category}
+                  </span>
                 </div>
-              );
-            })}
+                
+                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                  {project.title}
+                </h3>
+                
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex gap-3">
+                  <a 
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                  >
+                    <Github size={16} />
+                    Code
+                  </a>
+                  <a 
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors duration-200"
+                  >
+                    <ExternalLink size={16} />
+                    Demo
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

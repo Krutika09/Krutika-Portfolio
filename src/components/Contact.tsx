@@ -57,7 +57,7 @@ const Contact = () => {
                 <h4 className="font-semibold text-white mb-4">Follow Me</h4>
                 <div className="flex gap-4">
                   <a 
-                    href="https://linkedin.com/in/krutikayawale" 
+                    href="https://www.linkedin.com/in/iamkrutikayawale/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gray-700 hover:bg-blue-600 p-3 rounded-lg transition-all duration-200 hover:scale-110"
@@ -65,7 +65,7 @@ const Contact = () => {
                     <Linkedin size={20} />
                   </a>
                   <a 
-                    href="https://github.com/krutikaYawale" 
+                    href="https://github.com/Krutika09" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gray-700 hover:bg-gray-600 p-3 rounded-lg transition-all duration-200 hover:scale-110"

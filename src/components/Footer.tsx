@@ -1,20 +1,23 @@
 import React from 'react';
-import { Heart, Github, Linkedin, Mail, BookOpen } from 'lucide-react';
+import { Heart, Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 py-8 border-t border-gray-800">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
+          {/* Top Section */}
           <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold text-blue-400 mb-2">Krutika Yawale</h3>
+            {/* Name and Role */}
+            <div className="mb-4 md:mb-0 text-center md:text-left">
+              <h3 className="text-xl font-bold text-blue-400 mb-1">Krutika Yawale</h3>
               <p className="text-gray-400">DevOps Engineer</p>
             </div>
-            
-            <div className="flex gap-4">
+
+            {/* Social Links */}
+            <div className="flex gap-5">
               <a 
-                href="https://github.com/krutikaYawale" 
+                href="https://github.com/Krutika09" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors duration-200"
@@ -22,7 +25,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com/in/krutikayawale" 
+                href="https://www.linkedin.com/in/iamkrutikayawale/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
@@ -47,13 +50,14 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
+          {/* Bottom Section */}
           <div className="border-t border-gray-800 pt-6 text-center">
             <p className="text-gray-400 flex items-center justify-center gap-2 mb-2">
               Made with <Heart size={16} className="text-red-500" /> by Krutika Yawale
             </p>
             <p className="text-gray-500">
-              © 2024 Krutika Yawale. All rights reserved.
+              © {new Date().getFullYear()} Krutika Yawale. All rights reserved.
             </p>
           </div>
         </div>
