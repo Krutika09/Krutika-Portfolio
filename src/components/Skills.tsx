@@ -10,8 +10,7 @@ const Skills = () => {
         { name: 'AWS (EC2, VPC, Lambda, ALB)', level: 85 },
         { name: 'Linux', level: 90 },
         { name: 'Docker', level: 85 },
-        { name: 'Kubernetes', level: 80 },
-        { name: 'Networking', level: 75 }
+        { name: 'Kubernetes', level: 80 }
       ]
     },
     {
@@ -19,7 +18,7 @@ const Skills = () => {
       color: 'from-green-500 to-green-600',
       skills: [
         { name: 'Jenkins', level: 80 },
-        { name: 'Ansible', level: 85 },
+        { name: 'Ansible (Basic)', level: 70 },
         { name: 'Terraform (IaC)', level: 70 },
         { name: 'Shell Scripting', level: 88 },
         { name: 'Git & GitHub', level: 85 }
@@ -32,18 +31,17 @@ const Skills = () => {
         { name: 'Python', level: 75 },
         { name: 'Flask', level: 70 },
         { name: 'YAML/JSON', level: 80 },
-        { name: 'SSH & Security', level: 85 },
         { name: 'Troubleshooting', level: 88 }
       ]
     }
   ];
 
-  const certifications = [
-    'AWS Cloud Practitioner (In Progress)',
-    'Linux System Administration',
-    'Docker & Containerization',
-    'Kubernetes Fundamentals'
-  ];
+  // const certifications = [
+  //   'AWS Cloud Practitioner (In Progress)',
+  //   'Linux System Administration',
+  //   'Docker & Containerization',
+  //   'Kubernetes Fundamentals'
+  // ];
 
   const SkillBar = ({ skill }: { skill: { name: string; level: number } }) => (
     <div className="mb-4">

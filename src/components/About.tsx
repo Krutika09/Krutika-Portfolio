@@ -45,7 +45,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-2">Cloud Solutions</h4>
-                  <p className="text-gray-400">AWS certified with expertise in VPC, EC2, Lambda, and scalable architecture</p>
+                  <p className="text-gray-400">AWS expertise in VPC, EC2, Lambda, S3, CloudWatch, Cloud Formation Template, Route53  and scalable architecture</p>
                 </div>
               </div>
               
@@ -55,7 +55,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white mb-2">Configuration Management</h4>
-                  <p className="text-gray-400">Advanced skills in Ansible, Terraform (IaC), and shell scripting</p>
+                  <p className="text-gray-400">Skills in Ansible, Terraform (IaC), and shell scripting</p>
                 </div>
               </div>
             </div>
