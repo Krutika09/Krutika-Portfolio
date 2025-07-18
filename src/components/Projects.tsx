@@ -76,60 +76,63 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">Projects</h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={index} className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="bg-blue-600 p-3 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
-                    <project.icon size={24} />
-                  </div>
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getCategoryColor(project.category)}`}>
-                    {project.category}
-                  </span>
-                </div>
-                
-                <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
-                  {project.title}
-                </h3>
-                
-                <p className="text-gray-300 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-                
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-sm"
-                    >
-                      {tech}
+            {projects.map((project, index) => {
+              const Icon = project.icon;
+              return (
+                <div key={index} className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="bg-blue-600 p-3 rounded-lg group-hover:bg-blue-500 transition-colors duration-300">
+                      <Icon size={24} />
+                    </div>
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium text-white ${getCategoryColor(project.category)}`}>
+                      {project.category}
                     </span>
-                  ))}
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+
+                  <p className="text-gray-300 mb-4 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                    >
+                      <Github size={16} />
+                      Code
+                    </a>
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors duration-200"
+                    >
+                      <ExternalLink size={16} />
+                      Demo
+                    </a>
+                  </div>
                 </div>
-                
-                <div className="flex gap-3">
-                  <a 
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors duration-200"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
-                  <a 
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors duration-200"
-                  >
-                    <ExternalLink size={16} />
-                    Demo
-                  </a>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
