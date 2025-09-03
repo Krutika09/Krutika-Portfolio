@@ -86,6 +86,16 @@ const Projects = () => {
       demoUrl: 'https://github.com/Krutika09/GitHub-Repository-Access-Manager'
     },
     {
+      title: 'Deploy-a-Dockerized-WebApp-using-Ansible-Playbook-on-Kubernetes-Cluster',
+      description: 'The objective of the project “Deploy a Dockerized Web App using Ansible Playbook on Kubernetes Cluster” is to automate the deployment of a containerized application on a manually set up Kubernetes cluster using Ansible, without relying on prebuilt or managed services.',
+      technologies: ['Ansible', 'Kubernetes', 'Docker'],
+      icon: Server,
+      category: 'DevOps Tools',
+      githubUrl: 'https://github.com/Krutika09/Project03-Deploy-a-Dockerized-WebApp-using-Ansible-Playbook-on-Kubernetes-Cluster',
+      demoUrl: 'https://github.com/Krutika09/Project03-Deploy-a-Dockerized-WebApp-using-Ansible-Playbook-on-Kubernetes-Cluster'
+    },
+
+    {
       title: 'Ansible Cluster Setup',
       description: 'Manual Ansible Master-Node architecture using custom Red Hat-based images, demonstrating cluster setup in both Docker containers and Kubernetes pods.',
       technologies: ['Ansible', 'Docker', 'Kubernetes', 'Red Hat', 'Linux'],
