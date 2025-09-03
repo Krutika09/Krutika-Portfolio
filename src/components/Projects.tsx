@@ -31,6 +31,43 @@ const Projects = () => {
       demoUrl: 'https://github.com/Krutika09/Project07-Ansible-Driven-K8s-Configuration'
     },
     {
+      title: 'EKS-Cluster-With-HPA',
+      description: 'AWS EKS: HPA Setup with Load Testing',
+      technologies: ['Docker', 'Kubernetes', 'Red Hat', 'Linux'],
+      icon: Cog,
+      category: 'Infrastructure',
+      githubUrl: 'https://github.com/Krutika09/03-EKS-Cluster-With-HPA.git',
+      demoUrl: 'https://github.com/Krutika09/03-EKS-Cluster-With-HPA.git'
+    },
+    {
+      title: 'Containerized-Microservices',
+      description: 'Containerized-Microservices',
+      technologies: ['Docker', 'Kubernetes', 'Red Hat', 'Linux'],
+      icon: Cog,
+      category: 'Infrastructure',
+      githubUrl: 'https://github.com/Krutika09/02-Containerized-Microservices.git',
+      demoUrl: 'https://github.com/Krutika09/02-Containerized-Microservices.git'
+    },
+    {
+      title: 'Full DevOps Workflow Overview',
+      description: 'Code Push → Jenkins Build → Ansible Deploy → Docker Container → Kubernetes Service Special Condition: Every tool is manually installed (no prebuilt images), so all components are custom-configured from scratch.',
+      technologies: ['Ansible', 'Docker', 'Kubernetes', 'Red Hat', 'Linux'],
+      icon: Cog,
+      category: 'Infrastructure',
+      githubUrl: 'https://github.com/Krutika09/Project-08-Full-DevOps-Workflow-And-Git-Jenkins-Ansible-Docker-Kubernetes',
+      demoUrl: 'https://github.com/Krutika09/Project-08-Full-DevOps-Workflow-And-Git-Jenkins-Ansible-Docker-Kubernetes'
+    },
+    {
+      title: 'Kubeadm-Docker-Jenkins-Ansible-GitHub-Webhooks-AWS',
+      description: 'In this guide, we’ll walk through deploying Jenkins and Ansible inside a Kubernetes cluster, fully manually set up using kubeadm. The goal is to       create a flexible automation environment where Jenkins can trigger Ansible playbooks to manage and deploy applications directly inside Kubernetes pods.',
+      technologies: ['Ansible', 'Kubernetes', 'Docker', 'SSH', 'NGINX'],
+      icon: Cog,
+      category: 'Configuration Management',
+      githubUrl: 'https://github.com/Krutika09/Project06-Kubeadm-Docker-Jenkins-Ansible-GitHub-Webhooks-AWS',
+      demoUrl: 'https://github.com/Krutika09/Project06-Kubeadm-Docker-Jenkins-Ansible-GitHub-Webhooks-AWS'
+    },
+
+    {
       title: 'AWS Lambda EBS Snapshot Cleanup',
       description: 'Automated EBS snapshot cleanup using AWS Lambda for cost efficiency and storage optimization.',
       technologies: ['AWS Lambda', 'EBS', 'Python', 'CloudWatch'],
